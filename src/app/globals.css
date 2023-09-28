@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.site-header {
+  z-index: 100;
+}
+
+.site-header[data-v-1def8f76] {
+  height: 72px;
+  background-color: #fff;
+  padding: 0 0 0 24px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+.ant-layout-header {
+  height: 64px;
+  padding: 0 50px;
+  line-height: 64px;
+  background: #001529;
+}
+
+.header-right[data-v-1def8f76] {
+  margin-left: auto;
+}
+
+.ant-space-align-center {
+  align-items: center;
+}
+
+.ant-space {
+  display: inline-flex;
+}
+
+.header-button[data-v-1def8f76] {
+  min-width: 140px;
+}
+
+a.ant-btn,
+a.ant-btn-lg {
+  line-height: 46px;
+}
+
+a.ant-btn {
+  padding-top: 0.1px;
+}
+
+.ant-btn-primary {
+  color: #fff;
+  background-color: #e21c23;
+  border-color: #e21c23;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+
+.ant-btn,
+.ant-btn:active,
+.ant-btn:focus {
+  outline: 0;
+}
+
+.ant-btn {
+  line-height: 1.499;
+  position: relative;
+  display: inline-block;
+  font-weight: 300;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  height: 48px;
+  padding: 0 15px;
+  font-size: 14px;
+  border-radius: 50px;
+  color: #e21c23;
+  background-color: #fff;
+  border: 1px solid #e21c23;
+}
